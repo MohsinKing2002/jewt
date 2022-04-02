@@ -1,0 +1,326 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #f3ecff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*  utility classes     */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: midnightblue;
+    text-align: center;
+}
+
+.mission_title{
+    color: #242582;
+    font-size: 1.3rem;
+    padding: 15px 0;
+    font-weight: 400;
+}
+
+.contents{
+    letter-spacing: 0.8px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: midnightblue;
+}
+
+.name{
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: midnightblue;
+}
+
+/*  design the navbar    */
+
+.logo img{
+    height: 6vh;
+    border-radius: 100%;
+    margin-right: 1rem;
+    filter: invert(100%);
+}
+
+.brand{
+    font-size: 1.2rem;
+    filter: drop-shadow(2px 1px 2px yellow);
+    margin-right: 2rem;
+}
+
+.navbar{
+    padding: 5px 3rem;
+}
+
+.navbar-nav,
+.mr-auto {
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
+
+.nav-link{
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/*      design the container part   */
+.Container{
+    padding: 1rem 2rem;
+}
+
+.heading{
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    color: midnightblue;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about{
+    width: 88vw;
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: azure;
+}
+.about img{
+    height: 40vh;
+    border-radius: 20px;
+}
+
+.aboutContent{
+    padding: 2rem;
+    width: 70%;
+    text-align: center;
+}
+.about_contents{
+    font-size: 1.3rem;
+    color: midnightblue;
+    line-height: 1.8;
+}
+
+/*      misssion        */
+.box{
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    background-color: azure;
+    transition: all 0.4s ease-in-out;
+}
+.box:hover{
+    transform: translateY(5px);
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+.mission_img{
+    height: 28vh;
+    border-radius: 20px;
+}
+
+/*      team desigining     */
+.team_box{
+    width: 25vw;
+}
+
+.team_img{
+    height: 25vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/*      donate designing    */
+.donateBox{
+    justify-content: space-around;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+}
+
+.bank_img{
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.details{
+    line-height: 2;
+}
+
+/*      contact desiging    */
+.contactBox{
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.icon{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.address_contents{
+    line-height: 1.5;
+    flex-direction: column;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.address{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 0 4rem;
+}
+.message{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+}
+
+.message_form{
+    text-align: center;
+    width: 35vw;
+}
+.message_form input, 
+.message_form textarea{
+    width: 80%;
+    margin: 6px 0;
+    font-size: 1.1rem;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.3px solid blueviolet;
+    outline: none;
+}
+
+.message_form textarea{
+    height: 20vh;
+    resize: none;
+}
+
+.btns{
+    margin: 15px 0;
+    padding: 4px 25px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btns:hover{
+    background-color: orangered;
+}
+
+footer{
+    background-color: #302a2a;
+    color: lavender;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/*      Responsive code     */
+@media screen and (max-width: 1280px){
+    .flex{
+        flex-direction: column;
+    }
+    .navbar{
+        padding: 5px 10px;
+    }
+    .about{
+        width: 80vw;
+        padding: 10px 20px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    .aboutContent{
+        width: 80vw;
+        padding: 5px 15px;
+    }
+    .about_contents{
+        font-size: 12px;
+    }
+    .about img{
+        height: 20vh;
+    }
+    .title {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+    }
+    
+    .mission_title {
+        font-size: 13px;
+    }
+    
+    .contents {
+        letter-spacing: 0.3px;
+        font-size: 12px;
+    }
+    
+    .name {
+        font-size: 11px;
+    }
+    .box{
+        width: 80vw;
+    }
+    .icon{
+        font-size: 14px;
+    }
+    .bank_img{
+        height: 20vh;
+    }
+    .mission_img{
+        height: 15vh;
+    }
+    .team_box{
+        width: 75vw;
+    }
+    .team_img{
+        height: 20vh;
+    }
+    .message_form{
+        width: 60vw;
+    }
+    .address{
+        margin: 20px 0;
+        width: 80vw;
+        padding: 5px 10px;
+    }
+    .message{
+        width: 80vw;
+        padding: 5px 10px;
+    }
+    .message_form input,
+    .message_form textarea{
+        font-size: 11px;
+    }
+    .btns{
+        font-size: 10px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
