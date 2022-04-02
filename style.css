@@ -13,7 +13,10 @@ html{
     scroll-behavior: smooth;
 }
 
-/*  utility classes     */
+/******************************************************
+            utility classes
+******************************************************/
+
 .flex{
     display: flex;
     align-items: center;
@@ -49,7 +52,9 @@ html{
     color: midnightblue;
 }
 
-/*  design the navbar    */
+/******************************************************
+            navbar designing
+******************************************************/
 
 .logo img{
     height: 6vh;
@@ -81,7 +86,10 @@ justify-content: space-between;
     letter-spacing: 1px;
 }
 
-/*      design the container part   */
+/******************************************************
+            container designing
+******************************************************/
+
 .Container{
     padding: 1rem 2rem;
 }
@@ -118,7 +126,9 @@ justify-content: space-between;
     line-height: 1.8;
 }
 
-/*      misssion        */
+/******************************************************
+            mission designing
+******************************************************/
 .box{
     padding: 15px;
     border-radius: 10px;
@@ -136,7 +146,10 @@ justify-content: space-between;
     border-radius: 20px;
 }
 
-/*      team desigining     */
+/******************************************************
+            team designing
+******************************************************/
+
 .team_box{
     width: 25vw;
 }
@@ -147,7 +160,10 @@ justify-content: space-between;
     margin-bottom: 10px;
 }
 
-/*      donate designing    */
+/******************************************************
+            donate designing
+******************************************************/
+ 
 .donateBox{
     justify-content: space-around;
     background-color: azure;
@@ -164,7 +180,9 @@ justify-content: space-between;
     line-height: 2;
 }
 
-/*      contact desiging    */
+/******************************************************
+            contact designing
+******************************************************/
 .contactBox{
     justify-content: space-around;
     padding: 1rem;
@@ -235,13 +253,15 @@ justify-content: space-between;
 footer{
     background-color: #302a2a;
     color: lavender;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
 
-/*      Responsive code     */
+/******************************************************
+     Responsive code
+******************************************************/
 @media screen and (max-width: 1280px){
     .flex{
         flex-direction: column;
@@ -261,10 +281,11 @@ footer{
         padding: 5px 15px;
     }
     .about_contents{
-        font-size: 12px;
+        font-size: 14px;
     }
     .about img{
-        height: 20vh;
+        margin-top: 20px;
+        height: 35vh;
     }
     .title {
         font-size: 14px;
@@ -272,16 +293,16 @@ footer{
     }
     
     .mission_title {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .contents {
         letter-spacing: 0.3px;
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .name {
-        font-size: 11px;
+        font-size: 12.5px;
     }
     .box{
         width: 80vw;
@@ -290,28 +311,30 @@ footer{
         font-size: 14px;
     }
     .bank_img{
-        height: 20vh;
+        height: 30vh;
     }
     .mission_img{
-        height: 15vh;
+        height: 30vh;
+        margin-bottom: 15px;
     }
     .team_box{
         width: 75vw;
     }
     .team_img{
-        height: 20vh;
+        height: 40vh;
+        margin-bottom: 15px;
     }
     .message_form{
         width: 60vw;
     }
     .address{
-        margin: 20px 0;
+        margin-bottom: 20px;
         width: 80vw;
         padding: 5px 10px;
     }
     .message{
         width: 80vw;
-        padding: 5px 10px;
+        padding: 5px 35px;
     }
     .message_form input,
     .message_form textarea{
