@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -98,69 +99,89 @@
 
         <div class="team" id="team">
             <h2 class="title">Our Team</h2>
-            <div class="boxes flex">
-                <div class="box team_box">
-                    <img src="images/founder.jpeg" class="team_img">
-                    <h2 class="name">Founder Name</h2>
-                    <h2 class="name">Founder</h2>
-                </div>
-                <div class="box team_box">
-                    <img src="images/chairman.jpeg" class="team_img">
-                    <h2 class="name">Md Irfan Alam</h2>
-                    <h2 class="name">Chaiman</h2>
-                </div>
-                <div class="box team_box">
-                    <img src="images/voice_chairman.jpeg" class="team_img">
-                    <h2 class="name">Bebajir Banu</h2>
-                    <h2 class="name">Voice Chaiman</h2>
-                </div>
-                <div class="box team_box">
-                    <img src="images/voice_sectary.jpeg" class="team_img">
-                    <h2 class="name">Md Imam</h2>
-                    <h2 class="name">Voice Secretary</h2>
+
+            <div class="team_section">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/founder.jpeg" class="team_img">
+                                <h2 class="name">Founder Name</h2>
+                                <h2 class="name">Founder</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/chairman.jpeg" class="team_img">
+                                <h2 class="name">Md Irfan Alam</h2>
+                                <h2 class="name">Chaiman</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/voice_chairman.jpeg" class="team_img">
+                                <h2 class="name">Bebajir Banu</h2>
+                                <h2 class="name">Voice Chaiman</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/voice_sectary.jpeg" class="team_img">
+                                <h2 class="name">Md Imam</h2>
+                                <h2 class="name">Voice Secretary</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/treasure.jpeg" class="team_img">
+                                <h2 class="name">Akbar Ali</h2>
+                                <h2 class="name">Treasurer</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/2nd_trustee.jpeg" class="team_img">
+                                <h2 class="name">Jahanara Khatun</h2>
+                                <h2 class="name">2nd Trustee</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/member1.jpeg" class="team_img">
+                                <h2 class="name">Sameer Jameel</h2>
+                                <h2 class="name">Member</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box team_box">
+                                <img src="images/member3.jpeg" class="team_img">
+                                <h2 class="name">Md Faruque</h2>
+                                <h2 class="name">Member</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="boxes flex">
-                <div class="box team_box">
-                    <img src="images/treasure.jpeg" class="team_img">
-                    <h2 class="name">Akbar Ali</h2>
-                    <h2 class="name">Treasurer</h2>
-                </div>
-                <div class="box team_box">
-                    <img src="images/2nd_trustee.jpeg" class="team_img">
-                    <h2 class="name">Jahanara Khatun</h2>
-                    <h2 class="name">2nd Trustee</h2>
-                </div>
-                <div class="box team_box">
-                    <img src="images/member1.jpeg" class="team_img">
-                    <h2 class="name">Sameer Jameel</h2>
-                    <h2 class="name">Member</h2>
-                </div>
-                <div class="box team_box">
-                    <img src="images/member3.jpeg" class="team_img">
-                    <h2 class="name">Md Faruque</h2>
-                    <h2 class="name">Member</h2>
-                </div>
-            </div>
+
         </div>
 
         <div class="donate" id="donate">
             <h2 class="title">Donate Us</h2>
-            <div class="donateBox flex">
-                <img src="images/bank.jpeg" class="bank_img">
-
-                <div class="details">
-                    <h2 class="title">Bank Details : </h2>
-                    <span class="name"> <strong>Bank : </strong> State Bank Of India</span> <br>
-                    <span class="name"> <strong>Name : </strong> Jahanara Khatun </span> <br>
-                    <span class="name"> <strong>ACC no : </strong> 39514597312 </span> <br>
-                    <span class="name"> <strong>CIF no : </strong> 90601980167 </span> <br>
-                    <span class="name"> <strong>IFSC code : </strong> SBIN0002047 </span> <br>
-                    <span class="name"> <strong>Branch : </strong> Dalkhola </span> <br>
-                    <span class="name"> <strong>K O name : </strong> Mustaque Ahamed </span> <br>
-                    <span class="name"> <strong>K O location : </strong> Gandal Teliapokher </span> <br>
+            
+            <div class="donate_section">
+                <div class="overlay">
+                    <div class="donate_contents">
+                        <p class="contents">We have a Organization named Jahanara Education and Welfare Trust</p>
+                        <p class="contents">our motive is to help the poor students, doing social works and helping the widow's to get marriage</p>
+                        <p class="contents">So, join, donate, support us to provide more.. </p> <br>
+                        <button class="btns">Donate us</button>
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <div class="contact" id="contact">
@@ -170,7 +191,15 @@
                 <div class="address">
                     <h2 class="title address_contents flex"><span class="icon">Address :</span> Shamaspur, Bidyanandpur <br>Chakulia Uttar Dinajpur <br> West Bengal, 733208</h2>
 
+                    <div class="map">
+                        <iframe id="map_img"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13486.133352950581!2d87.98156108706553!3d25.949542533441978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e53c928235ca71%3A0xe45f7ccc0db61da2!2sSamaspur%20F.P%20School!5e0!3m2!1sen!2sin!4v1649849773013!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                     <h2 class="title address_contents flex"><span class="icon">Mail : </span>jahanaraeducation<br>welfaretrust@gmail.com</h2>
+
                 </div>
                 <div class="message">
                     <form id="message_form" method="post" class="message_form">
@@ -195,5 +224,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </html>
