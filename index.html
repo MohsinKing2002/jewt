@@ -217,12 +217,12 @@
 
                 </div>
                 <div class="message">
-                    <form id="message_form" method="post" class="message_form">
-                        <input type="text" id="name" placeholder="Write Your Name">
-                        <input type="email" id="email" placeholder="Write Your Email">
-                        <textarea name="message" id="message" placeholder="Write Your Message"></textarea>
+                    <form action="https://formspree.io/f/mrgjyrev" method="POST" class="message_form">
+                        <input type="text" name="name" placeholder="Write Your Name" required autocomplete="off">
+                        <input type="email" name="email" placeholder="Write Your Email" required autocomplete="off">
+                        <textarea name="message" id="message" placeholder="Write Your Message.." required autocomplete="off"></textarea>
                         <br>
-                        <button class="btns" type="submit">Send</button>
+                        <button type="submit" class="btns">Send</button>
                     </form>
                 </div>
             </div>
@@ -239,6 +239,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </html>
